@@ -4,21 +4,17 @@ class ResultsController < ApplicationController
 
   def show
     @result = Result.find(params[:id])
+    @comments = Comments.find_by( result_id: params[:id] )
   end
 
   def new
     @result = Result.new
   end
 
+  private
+
   def result_params
     params.require(:result).permit(:category, :description)
   end
 
 end
-
-# create_table "results", force: :cascade do |t|
-#   t.string   "category"
-#   t.text     "description"
-#   t.datetime "created_at",  null: false
-#   t.datetime "updated_at",  null: false
-# end
