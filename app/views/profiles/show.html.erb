@@ -1,8 +1,8 @@
 <div class="profile">
-		<%= link_to image_tag(profile.img_url, alt: "Profile Image"), profile_path(profile), class: "img" %>
-		<%= link_to profile.name, profile_path(profile), class: "name" %>
-		<%= profile.former_position, class: "former_position" %>
-		<%= profile.current_position, class: "current_position" %>
-		<%= profile.blurb, class: "blurb" %>
-		<%= profile.body, class: "body" %>
-	</div>
+	<%= image_tag @profile.img_url, alt: "Profile Image", class: "img" %>
+	<p class="name">Name: <%= @profile.name %></p>
+	<p class="former_position">Former Position: <%= @profile.former_position %></p>
+	<p class="current_position">Current Position: <%= @profile.current_position %></p>
+	<p class="blurb">"<%= @profile.blurb %>"</p>
+	<p class="body"><%= @profile.body %></p>
+</div>
