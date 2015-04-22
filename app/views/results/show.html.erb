@@ -1,14 +1,16 @@
-<h2>Your Tech Path is <%= @result.category %></h2>
-<%= @result.description %>
+<div class = "subheader">
+  <h2>You should consider exploring:</h2>
+  <h1><%= @result.category %></h1>
+  <%= @result.description %>
+</div>
 
-<hr>
-<h3>Statistics</h3>
+<div class="container">
+  <h2>Statistics</h2>
+  <p>Possible career paths: <%= @result.career_titles%><p>
 
-<hr>
-
-<% if current_user || @result.id == 1 %>
-  <h3>Articles</h3>
-  
+  <hr>
+  <% if current_user || @result.id == 1 %>
+  <h2>Articles</h2>
   <% 3.times do %>
     <%= image_tag @result.article_img_url, alt: "article image", class: "article_img" %>
     <p><%= @result.article_title %></p>
@@ -16,16 +18,17 @@
   <% end %>
 
   <hr>
-  <h3>Meetups</h3>
+  <h2>Meetups</h2>
 
-    <% @api_info.each do |meetup| %>
-      <div>
-        <%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %>
-        <p><%= link_to meetup[:name], meetup[:group_url] %></p>
-      </div>
-    <% end %>
+  <% @api_info.each do |meetup| %>
+    <div>
+      <%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %>
+      <p><%= link_to meetup[:name], meetup[:group_url] %></p>
+    </div>
+  <% end %>
 
   <hr>
+</div>
 
   <%= render "form" %>
 
