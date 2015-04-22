@@ -4,7 +4,7 @@ class ResultsController < ApplicationController
 
   def show
     @result = Result.find(params[:id])
-    @comments = Comments.find_by( result_id: params[:id] )
+    @comments = Comment.find_by( result_id: params[:id] )
   end
 
   def new

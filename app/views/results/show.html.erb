@@ -12,6 +12,16 @@
 
 <hr>
 
-<% @comments.each do |comment| %>
+<%= form_for @result.comments.new do |f| %>
+  
+  <%= f.label :body %>
+  <%= f.text_area :body %>
 
+  <%= f.submit %>
+
+<% end %>
+
+<% @comments.each do |comment| %>
+  <%= User.find(comment.user_id) %>
+  <%= comment.body %>
 <% end %>
