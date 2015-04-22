@@ -13,7 +13,11 @@
     <a href = "/profiles">Profiles</a>
     <a href = "/quiz">Quiz</a>
     <a href = "/results/1">Resources</a>
-    <a href = "/users/sign_in">Login</a>
+    <% if current_user %>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <a href = "/users/sign_in">Login</a>
+    <% end %>
   </header>
 
 <%= yield %>

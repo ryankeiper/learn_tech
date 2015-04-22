@@ -1,19 +1,15 @@
-<div class= "header2">
-  <h2>Your Should Consider exploring:</h2>
-  <h1><%= @result.category %></h1>
-
-  </br>
-  <%= @result.description %>
-</div>
+<h2>Your Tech Path is <%= @result.category %></h2>
+<%= @result.description %>
 
 <hr>
-<h3>Statistics</h3>
+<h3><%= @result.category %> Statistics</h3>
 
 <hr>
-<h3>Articles</h3>
+<% if current_user || @result.id == 1 %>
+<h3><%= @result.category %> Articles</h3>
 
 <hr>
-<h3>Meetups</h3>
+<h3><%= @result.category %> Meetups</h3>
 
 <hr>
 
@@ -25,5 +21,11 @@
   <%= comment.body %>
   <%= link_to 'Edit', edit_result_comment_path( @result, comment) %>
   <%= link_to 'Delete', result_comment_path( @result, comment), method: :delete %></p>
+
+<% end %>
+
+<% else %>
+<p>Create an account to see results tailored specifically to you, and more resources in your local area!</p>
+
 
 <% end %>
