@@ -12,6 +12,13 @@
 
 <hr>
 
+<%= render "form" %>
+
 <% @comments.each do |comment| %>
+
+  <p><span>Username: Joe</span>
+  <%= comment.body %>
+  <%= link_to 'Edit', edit_result_comment_path( @result, comment) %>
+  <%= link_to 'Delete', result_comment_path( @result, comment), method: :delete %></p>
 
 <% end %>
