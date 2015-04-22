@@ -38,6 +38,25 @@ header a:hover{
   color:red;
 }
 
-.header2{
-  background:rgb();
+.subheader{
+  background:rgb(249, 204, 177);
+  padding:1%;
+  margin-left:-.5%;
+  margin-top:-.5%;
+}
+
+.subheader h1, h2{
+  text-align:center;
+}
+
+.subheader h1{
+  font-size:3em;
+}
+
+.container {
+  margin-left:18%;
+  width:70%;
+}
+.container h2{
+  text-align:left;
 }
