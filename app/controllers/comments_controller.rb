@@ -5,9 +5,10 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.new( comment_params )
+    @result = Result.find( params[:result_id] )
+    @comment = @result.comments.new( comment_params )
     if @comment.save
-      redirect_to result_path
+      redirect_to @result
     else
       render :new
     end
@@ -15,22 +16,24 @@ class CommentsController < ApplicationController
 
   def edit
     @comment = Comment.find( params[:id] )
+    @result = Result.find(@comment.result_id)
   end
 
   def update
     @comment = Comment.find( params[:id] )
+    @result = Result.find( @comment.result_id )
     if @comment.update ( comment_params )
-      redirect_to result_path
+      redirect_to @result
     else
       render :edit
     end
   end
 
   def destroy
-    # @result = Result.find(params[:id])
     @comment = Comment.find( params[:id] )
+    @result = Result.find( @comment.result_id )
     @comment.destroy
-    redirect_to result_path
+    redirect_to @result
   end
 
   private

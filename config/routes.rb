@@ -8,8 +8,9 @@ Rails.application.routes.draw do
   get 'quiz' => 'static_pages#quiz'
 
   resources :profiles
-  resources :results
-  resources :comments
+  resources :results do
+    resources :comments
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
