@@ -5,6 +5,7 @@ class ResultsController < ApplicationController
   def show
     @result = Result.find(params[:id])
     @comments = @result.comments.all.order(:id)
+    @api_info = @result.get_api_info
   end
 
   def new
