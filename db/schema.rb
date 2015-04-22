@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20150421164134) do
     t.string   "article_title"
     t.string   "article_source"
     t.text     "article_blurb"
+    t.text     "career_titles"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
