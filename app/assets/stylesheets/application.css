@@ -14,26 +14,42 @@
  *= require_self
  */
 
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #E5E5E5;
   font-family: Futura, "Open Sans", sans-serif;
 }
 
+.container {
+  margin: 30px auto 0 auto;
+  width: 70%;
+}
+.container h2 {
+  text-align: left;
+}
+
+h2 {
+  font-family: Futura, "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+/*******************************/
+/********** HEADER *************/
+/*******************************/
+
 header {
   padding-top: 40px;
-  background-color: black;
   width: 100%;
-  background-color: black;
 }
 
 .logo {
   display: inline-block;
   margin: 0 0 0 20px;
   padding: 0 0 0 0;
-  color: white;
+  color: #319FEE;
   font-size: 2em;
+  font-weight: 800;
 }
 
 nav ul {
@@ -44,42 +60,122 @@ nav ul {
 
 nav li {
   display: inline-block;
-  font-size: 1.5em;
   margin-left: 50px;
+  font-size: 1.5em;
 }
 
 nav a {
-  color: white;
+  color: #319FEE;
   text-decoration: none;
 }
 
-.subheader{
-  background: rgb(249, 204, 177);
-  padding: 1%;
-  margin-left: -.5%;
-  margin-top: -.5%;
+
+/*******************************/
+/*********** HOME **************/
+/*******************************/
+
+.hero {
+  width: 100%
+  max-height: 400px;
+  margin: 20px 0 0 0;
+  padding: 40px 0 40px 0;
+  background: url("hero_bg1.jpg");
+  font-family: "Open Sans";
 }
 
-.subheader h1, h2{
+.hero_container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero_container img {
+  display: inline-block;
+  width: 25%;
+  margin-right: 20px;
+  border: 5px #319FEE solid;
+  border-radius: 50%;
+}
+
+.hero_text {
+  display: inline-block;
+  margin: auto 0;
+  width: 65%;
+}
+
+.hero_1, .hero_2 {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.hero_1 {
+  color: #319FEE;
+  margin-bottom: -20px;
+}
+
+.hero_2 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.hero_3, .hero_4 {
+  font-size: 18px;
+}
+
+.hero_3 {
+  margin-bottom: -15px;
+  font-weight: bold;
+}
+
+.hero_4 {
+  font-weight: normal;
+}
+
+.carousel_buttons {
+  margin: 20px auto 40px auto;
   text-align: center;
 }
 
-.subheader h1{
-  font-size: 3em;
+.carousel_buttons img {
+  display: inline-block;
 }
 
-.container {
-  margin: 30px auto 0 auto;
-  width: 70%;
-}
-.container h2{
-  text-align: left;
+.to_quiz {
+  width: 40%;
+  margin: 0 auto;
 }
 
-h2 {
-  font-family: Futura, "Open Sans", sans-serif;
-  font-weight: 800;
+.to_quiz_text {
+  display: inline-block;
+  float: left;
+  width: 75%;
 }
+
+.to_quiz_header {
+  font-size: 26px;
+  font-weight: 400;
+  color: #319FEE;
+}
+
+.to_quiz_body {
+
+}
+
+.to_quiz_button {
+  display: inline-block;
+  float: right;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #319FEE;
+  line-height: 100px;
+  text-align: center;
+}
+
+.to_quiz_button a {
+  text-decoration: none;
+  color: white;
+}
+
 
 /*******************************/
 /******** RESULT PAGE **********/
