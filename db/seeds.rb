@@ -17,7 +17,7 @@ results = Result.create([
     article_title:"Q&A: Tech careers that pay big",
     article_source:"USA Today",
     article_blurb:"Data analytics, security among best tech sectors for high paying jobs",
-    career_titles:"Game Developer:$80k-120k, Mobile App Developer:$85k-125k, Technical Lead:$85k-$140k",
+    career_titles:"Game Developer: $80k-120k, Mobile App Developer: $85k-125k, Technical Lead: $85k-$140k",
     api_category: "css"},
 
   {category:"User Experience",
@@ -28,7 +28,7 @@ results = Result.create([
     article_title:"Shum guides Microsoft's design renaissance",
     article_source:"USA Today",
     article_blurb:"Ex-Nike Designer aims to help microsoft staffers connect with consumers and each other",
-    career_titles:"Usability Analysis:$66k-$127k, Information Architect:$80k-$126k, Interaction Designer:$74k-$115k etc.",
+    career_titles:"Usability Analysis: $66k-$127k, Information Architect: $80k-$126k, Interaction Designer: $74k-$115k",
     api_category: "ux"},
 
   {category:"Development",
@@ -39,7 +39,7 @@ results = Result.create([
     article_title:"Best, Worst entry level jobs: Boilermaker, anyone?",
     article_source:"USA Today",
     article_blurb:"Wallet Hub compares 109 different types of entry level jobs based on 11 key metrics",
-    career_titles:"Web Developer:$54k-$117k, Web Designer:$37k-$105k, Front-end Developer:$54k-$129k",
+    career_titles:"Web Developer: $54k-$117k, Web Designer: $37k-$105k, Front-end Developer: $54k-$129k",
     api_category: "ruby"},
 
   {category:"Visual Design" ,
@@ -50,7 +50,7 @@ results = Result.create([
     article_title:"The week in Tech: 5-must know things",
     article_source:"USA Today",
     article_blurb:"Here's what you need to know about the week in tech",
-    career_titles:"Web Designer:$37k-$105k, Graphic Designer:$31k-$79k, Art Director:$37k-$105k",
+    career_titles:"Web Designer: $37k-$105k, Graphic Designer: $31k-$79k, Art Director: $37k-$105k",
     api_category: "photoshop"},
 
   {category:"Database/Security" ,
@@ -61,7 +61,7 @@ results = Result.create([
     article_title:"Security researcher posts 10 million passwords",
     article_source:"USA Today",
     article_blurb:"The release is legal now but could get 10 years in prison under a new law",
-    career_titles:"Database Administrator:$41k-$65k, Data Architect:$80k-$120k, Security Specialist:$60k-$85k",
+    career_titles:"Database Administrator: $41k-$65k, Data Architect: $80k-$120k, Security Specialist: $60k-$85k",
     api_category: "database"},
 
   {category:"Management",
@@ -72,16 +72,6 @@ results = Result.create([
     article_title:"Lessons learned from a new era of finance and tech" ,
     article_source:"USA Today",
     article_blurb:"The stories we're hering about finance chiefs is changing. Just follow Wall Street and Silicon Valley",
-    career_titles:"Digital Project Manager:$53k-$117k, SEO Consultant:$80k-$120k, Digital Marketing Manager:$70k-$130k",
+    career_titles:"Digital Project Manager: $53k-$117k, SEO Consultant: $80k-$120k, Digital Marketing Manager: $70k-$130k",
     api_category: "business"},
 ])
-
-# t.string   "category"
-# t.text     "description"
-# t.string   "stats_salary_range"
-# t.string   "stats_num_jobs"
-# t.text     "article_url"
-# t.text     "article_img_url"
-# t.string   "article_title"
-# t.string   "article_source"
-# t.text     "article_blurb"

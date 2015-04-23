@@ -38,19 +38,25 @@
     </div>
 
     <h2>COMMENTS</h2>
-    <div class="comments_container"
+    <div class="comments_container">
+      <% if current_user %>
+        <%= render "form" %>
 
-      <%= render "form" %>
-
-      <% @comments.each do |comment| %>
-      <div class="comments_individual">
-        <p class="comments_username"><%= current_user.user_name %><p>
-        <p class="comments_body"><%= comment.body %></p>
-        <div class="comments_edit_delete">
-          <%= link_to 'Edit', edit_result_comment_path( @result, comment ) %>
-          <%= link_to 'Delete', result_comment_path( @result, comment ), method: :delete %>
+        <% @comments.each do |comment| %>
+        <div class="comments_individual">
+          <p class="comments_username">
+            <%= comment.name %>
+          <p>
+          <p class="comments_body"><%= comment.body %></p>
+          <div class="comments_edit_delete">
+            <%= link_to 'Edit', edit_result_comment_path( @result, comment ) %>
+            <%= link_to 'Delete', result_comment_path( @result, comment ), method: :delete %>
+          </div>
         </div>
-      </div>
+        <% end %>
+      <% else %>
+        <p>You must be logged in to comment.</p>
+        <%= link_to "Log in here.", user_session_path %>
       <% end %>
     </div>
 </div>
