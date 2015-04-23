@@ -1,7 +1,32 @@
-<div class = "home">
-  <h1>Looking to go in a new direction? Consider Tech.</h1>
-</br>
-  <a href = "/profiles"<img src="http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/10/mountains.jpg" alt="dummy photo" height= "400" width= "400" /></a>
+<div class="hero">
+  <div class="hero_container">
+    <%= image_tag "austin.jpg", alt: "happy student" %>
+    <div class="hero_text">
+      <p class="hero_1">Journey Into Tech</p>
+      <p class="hero_2">Matt's Story</p>
+      <p class="hero_3">From Teacher to UX Designer</p>
+      <p>After eight years as a teacher, Matt found himself questioning where
+        his career was heading. How could he apply his skills in new and exciting
+        ways?</p>
+    </div>
+  </div>
+</div>
 
-  <a href = "/quiz"><button>Find your Tech Field</button></a>
+<div class="carousel_buttons">
+  <%= image_tag "carousel_filled.png", alt: "filled carousel button" %>
+  <%= image_tag "carousel_empty.png", alt: "empty carousel button" %>
+  <%= image_tag "carousel_empty.png", alt: "empty carousel button" %>
+  <%= image_tag "carousel_empty.png", alt: "empty carousel button" %>
+  <%= image_tag "carousel_empty.png", alt: "empty carousel button" %>
+</div>
+
+<div class="to_quiz">
+  <div class="to_quiz_text">
+    <p class="to_quiz_header">Start your journey now...</p>
+    <p class="to_quiz_body">No right or wrong. The answers are intended to help determine which tech
+    career path you should be on. So take a deep breath, and let's begin...</p>
+  </div>
+  <div class="to_quiz_button">
+    <%= link_to "TAKE QUIZ", "/quiz" %>
+  </div>
 </div>

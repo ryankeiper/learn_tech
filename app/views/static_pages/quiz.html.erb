@@ -1,9 +1,22 @@
-<h2>THE QUIZ!</h2>
-<%= @most_frequent_answer %>
-<ol>
-  <li><%= link_to "Front End Designer", "/results/2"%></li>
-  <li><%= link_to "Back End Designer", "/results/3"%></li>
-  <li><%= link_to "Project Manager", "/results/4"%></li>
-  <li><%= link_to "Security Manager", "/results/5"%></li>
-  <li><%= link_to "Visual", "/results/6"%></li>
-</ol>
+<div class ="quiz_container">
+
+  <div class="result_container">
+
+    <div class="result_header">FIND YOUR PATH ...</div>
+    <div class="result_type">QUIZ</div>
+    <div class="result_description">Find the Technology area perfect for you by taking this quiz</div>
+
+  </div>
+
+  <h2>THE QUIZ!</h2>
+
+  <%= link_to "SIGN UP", "/users/sign_up" %>
+
+  <ol>
+    <li><%= link_to "User Experience", "/results/2"%></li>
+    <li><%= link_to "Development", "/results/3"%></li>
+    <li><%= link_to "Visual Design", "/results/4"%></li>
+    <li><%= link_to "Database Security", "/results/5"%></li>
+    <li><%= link_to "Management", "/results/6"%></li>
+  </ol>
+</div>

@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150423204724) do
   enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
+    t.string   "name"
     t.text     "body"
     t.integer  "result_id"
     t.integer  "user_id"
@@ -60,6 +61,7 @@ ActiveRecord::Schema.define(version: 20150423204724) do
     t.string   "article_source"
     t.text     "article_blurb"
     t.text     "career_titles"
+    t.string   "api_category"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
   end
@@ -72,6 +74,7 @@ ActiveRecord::Schema.define(version: 20150423204724) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string   "user_name"
     t.integer  "result_key"
     t.string   "zip_code"
     t.datetime "created_at",                          null: false
