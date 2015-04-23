@@ -1,11 +1,15 @@
-<h2>Stories from people just like you! Placeholder text!</h2>
+<div class="container">
+<h2>They made the transtion, You can to!</h2>
 
-<% @profiles.each do |profile| %>
-	<div class="profile">
-		<%= link_to image_tag(profile.img_url, alt: "Profile Image"), profile_path(profile), class: "img" %>
-		<p>Name: <%= link_to profile.name, profile_path(profile), class: "name" %></p>
-		<p class="former_position">Former Position: <%= profile.former_position %></p>
-		<p class="current_position">Current Position: <%= profile.current_position %></p>
-		<p class="blurb">"<%= profile.blurb %>"</p>
+<div class="profile_container">
+	<% @profiles.each do |profile| %>
+					<div class="profile_individual">
+						<div class="profile_img"><%= link_to image_tag(profile.img_url, alt: "Profile Image"), profile_path(profile)%></div>
+						<p>Name: <%= link_to profile.name, profile_path(profile), class: "name" %></p>
+						<p class="former_position">Former Position: <%= profile.former_position %></p>
+						<p class="current_position">Current Position: <%= profile.current_position %></p>
+						<p class="blurb">"<%= profile.blurb %>"</p>
+					</div>
+			<% end %>
 	</div>
-<% end %>
+</div>

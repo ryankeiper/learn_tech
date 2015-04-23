@@ -132,3 +132,29 @@ h2 {
   margin: -10px 0 20px 0;
   font-weight: bold;
 }
+
+.profile_container{
+  /*width: 70%;*/
+  /*margin-left: 10%;*/
+}
+
+/*.profile_container img{
+  width:250px;
+  height:250px;
+}*/
+
+.profile_individual {
+  display:inline-block;
+  width:32%;
+}
+
+.profile_img {
+  height: 200px;
+  width: 200px;
+  overflow:hidden;
+}
+
+.profile_img img{
+  height:200px;
+  width:200px;
+}
