@@ -158,3 +158,31 @@ h2 {
   height:200px;
   width:200px;
 }
+
+.profile_show_container{
+  width: 60%;
+  margin-left:15%;
+  padding:5%;
+}
+
+.profile_show_container img{
+  width:400px;
+  height:400px;
+  margin-left:25%;
+}
+
+.profile_show_container h1{
+  text-align:center;
+}
+
+.position1 {
+  color:blue;
+}
+
+.position2 {
+  color:red;
+}
+
+.profile_show_container h3{
+  font-size:1.25em;
+}
