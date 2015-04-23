@@ -13,50 +13,122 @@
  *= require_tree .
  *= require_self
  */
+
 body{
-  font-family:'Muli', sans-serif;
+  background-color: #E5E5E5;
+  font-family: Helvetica, 'Muli', sans-serif;
 }
 
 header{
-  background:rgb(17, 158, 158);
-  color:rgb(255, 255, 255);
-  margin-left:-.5%;
-  margin-top:-1.4%;
-  padding:1%;
+  background: rgb(17, 158, 158);
+  color: rgb(255, 255, 255);
+  margin-left: -.5%;
+  margin-top: -1.4%;
+  padding: 1%;
 }
 
 header a{
-  color:rgb(255, 255, 255);
-  text-decoration:none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 header h1{
-  font-size:3em;
+  font-size: 3em;
 }
 
 header a:hover{
-  color:red;
+  color: red;
 }
 
 .subheader{
-  background:rgb(249, 204, 177);
-  padding:1%;
-  margin-left:-.5%;
-  margin-top:-.5%;
+  background: rgb(249, 204, 177);
+  padding: 1%;
+  margin-left: -.5%;
+  margin-top: -.5%;
 }
 
 .subheader h1, h2{
-  text-align:center;
+  text-align: center;
 }
 
 .subheader h1{
-  font-size:3em;
+  font-size: 3em;
 }
 
 .container {
-  margin-left:18%;
-  width:70%;
+  margin-left: 18%;
+  width: 70%;
 }
 .container h2{
-  text-align:left;
+  text-align: left;
+}
+
+h2 {
+  font-family: Futura, "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+/********** SHOW PAGE **********/
+
+.stats_container, .article_container, .meetup_container {
+  border-bottom: 1px #319FEE solid;
+}
+
+.stats_title, .article_title {
+  font-weight: bold;
+}
+
+.article_title {
+  margin-bottom: -10px;
+}
+
+.article_individual, .meetup_individual {
+  display: inline-block;
+  width: 32%;
+}
+
+.article_img, .meetup_img {
+  height: 100px;
+  width: 100px;
+  border: 5px #319FEE solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.meetup_title a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.comments_container textarea {
+  width: 300px;
+  height: 50px;
+  border: 1px #319FEE solid;
+  border-radius: 5px;
+}
+
+.comments_container input[type=submit] {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  background-color: #319FEE;
+  color: white;
+  font-weight: bold;
+}
+
+.comments_individual {
+  border-left: 5px #319FEE solid;
+  padding-left: 10px;
+}
+
+.comments_username {
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+
+.comments_edit_delete {
+  display: block;
+  margin: -10px 0 20px 0;
+  font-weight: bold;
 }
