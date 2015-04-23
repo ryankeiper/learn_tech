@@ -15,29 +15,42 @@
  */
 
 body{
+  margin: 0;
+  padding: 0;
   background-color: #E5E5E5;
-  font-family: Helvetica, 'Muli', sans-serif;
+  font-family: Futura, "Open Sans", sans-serif;
 }
 
-header{
-  background: rgb(17, 158, 158);
-  color: rgb(255, 255, 255);
-  margin-left: -.5%;
-  margin-top: -1.4%;
-  padding: 1%;
+header {
+  padding-top: 40px;
+  background-color: black;
+  width: 100%;
+  background-color: black;
 }
 
-header a{
-  color: rgb(255, 255, 255);
+.logo {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  padding: 0 0 0 0;
+  color: white;
+  font-size: 2em;
+}
+
+nav ul {
+  display: inline-block;
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: 50px;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
-}
-
-header h1{
-  font-size: 3em;
-}
-
-header a:hover{
-  color: red;
 }
 
 .subheader{
@@ -56,7 +69,7 @@ header a:hover{
 }
 
 .container {
-  margin-left: 18%;
+  margin: 30px auto 0 auto;
   width: 70%;
 }
 .container h2{
@@ -68,7 +81,41 @@ h2 {
   font-weight: 800;
 }
 
-/********** SHOW PAGE **********/
+/*******************************/
+/******** RESULT PAGE **********/
+/*******************************/
+
+.result_container {
+  margin: 0 0 50px 0;
+  border: 5px white solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.result_header, .result_type, .result_description {
+  width: 50%;
+  margin: 20px auto 20px auto;
+}
+
+.result_header {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.result_type {
+  border-radius: 5px;
+  text-align: center;
+  background-color: #319FEE;
+  color: white;
+  font-weight: 800;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.result_description {
+
+}
 
 .stats_container, .article_container, .meetup_container {
   border-bottom: 1px #319FEE solid;
@@ -110,6 +157,7 @@ h2 {
 
 .comments_container input[type=submit] {
   display: block;
+  margin-bottom: 40px;
   border: none;
   border-radius: 5px;
   background-color: #319FEE;
@@ -132,6 +180,11 @@ h2 {
   margin: -10px 0 20px 0;
   font-weight: bold;
 }
+
+
+/*******************************/
+/********** PROFILES  **********/
+/*******************************/
 
 .profile_container{
   /*width: 70%;*/
