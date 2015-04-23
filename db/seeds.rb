@@ -6,9 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Profile.create(name: "Fred", img_url: "IMG_1305.PNG", blurb: "I'ma Wario, I'ma gonna ween!", body: "Here's my story!", former_position: "Peasant", current_position: "Knight Errant")
-
 results = Result.create([
+
   {category:"Resources",
     description:"There are many place you can go for information on any one of the five major tech fields. Below are some recommended websites, articles, and meet-ups hosted by industry organizations that could help you in your search",
     stats_salary_range: "",
@@ -17,7 +16,7 @@ results = Result.create([
     article_title:"Q&A: Tech careers that pay big",
     article_source:"USA Today",
     article_blurb:"Data analytics, security among best tech sectors for high paying jobs",
-    career_titles:"Game Developer: $80k-120k, Mobile App Developer: $85k-125k, Technical Lead: $85k-$140k",
+    career_titles:"Game Developer: $80k - $120k, Mobile App Developer: $85k - $125k, Technical Lead: $85k - $140k",
     api_category: "css"},
 
   {category:"User Experience",
@@ -28,7 +27,7 @@ results = Result.create([
     article_title:"Shum guides Microsoft's design renaissance",
     article_source:"USA Today",
     article_blurb:"Ex-Nike Designer aims to help microsoft staffers connect with consumers and each other",
-    career_titles:"Usability Analysis: $66k-$127k, Information Architect: $80k-$126k, Interaction Designer: $74k-$115k",
+    career_titles:"Usability Analysis: $66k - $127k, Information Architect: $80k - $126k, Interaction Designer: $74k - $115k",
     api_category: "ux"},
 
   {category:"Development",
@@ -39,8 +38,8 @@ results = Result.create([
     article_title:"Best, Worst entry level jobs: Boilermaker, anyone?",
     article_source:"USA Today",
     article_blurb:"Wallet Hub compares 109 different types of entry level jobs based on 11 key metrics",
-    career_titles:"Web Developer: $54k-$117k, Web Designer: $37k-$105k, Front-end Developer: $54k-$129k",
-    api_category: "ruby"},
+    career_titles:"Web Developer: $54k - $117k, Web Designer: $37k - $105k, Front-end Developer: $54k - $129k",
+    api_category: "rails"},
 
   {category:"Visual Design" ,
     description:"Visual Design is the graphics and look behind tech and internet products. It is based more around aesthetics than usability and also focuses somewhat on branding and attracting consumers to the tech company or service.",
@@ -50,7 +49,7 @@ results = Result.create([
     article_title:"The week in Tech: 5-must know things",
     article_source:"USA Today",
     article_blurb:"Here's what you need to know about the week in tech",
-    career_titles:"Web Designer: $37k-$105k, Graphic Designer: $31k-$79k, Art Director: $37k-$105k",
+    career_titles:"Web Designer: $37k - $105k, Graphic Designer: $31k - $79k, Art Director: $37k - $105k",
     api_category: "photoshop"},
 
   {category:"Database/Security" ,
@@ -61,7 +60,7 @@ results = Result.create([
     article_title:"Security researcher posts 10 million passwords",
     article_source:"USA Today",
     article_blurb:"The release is legal now but could get 10 years in prison under a new law",
-    career_titles:"Database Administrator: $41k-$65k, Data Architect: $80k-$120k, Security Specialist: $60k-$85k",
+    career_titles:"Database Administrator: $41k - $65k, Data Architect: $80k - $120k, Security Specialist: $60k - $85k",
     api_category: "database"},
 
   {category:"Management",
@@ -72,6 +71,45 @@ results = Result.create([
     article_title:"Lessons learned from a new era of finance and tech" ,
     article_source:"USA Today",
     article_blurb:"The stories we're hering about finance chiefs is changing. Just follow Wall Street and Silicon Valley",
-    career_titles:"Digital Project Manager: $53k-$117k, SEO Consultant: $80k-$120k, Digital Marketing Manager: $70k-$130k",
+    career_titles:"Digital Project Manager: $53k - $117k, SEO Consultant: $80k - $120k, Digital Marketing Manager: $70k - $130k",
     api_category: "business"},
+])
+
+profiles = Profile.create([
+
+  {name: "Fatmata",
+    img_url: "http://www.kemri-wellcome.org/people_images/Eunice-Nduati-Black-and-White.jpg",
+    blurb: "I love problem solving am really finding my stride with the back end element of this course.",
+    body: "After 5 years in the post college world, trying to make it as an artist/waitress, I sat down to make a personal website and realized I didn't even know where to begin. I took a GA's front end web development in the fall and fell in love with making websites, and utilizing my undergraduate training in Mathematics. I love problem solving am really finding my stride with the back end element of this course.",
+    former_position: "Assistant Manager",
+    current_position: "Front-end Web Developer"},
+
+  {name: "Andrew",
+    img_url: "http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg",
+    blurb: "It's amazing to see real people using and benefiting from my work every day",
+    body: "I came here to learn how to make things that truly mattered to people, and that's exactly what I got. Using the skills I learned from WDI, I've built web apps that help people learn English and stay motivated to exercise. It's amazing to see real people using and benefiting from my work every day. WDI was also a pleasure for me because I love puzzles, and coding has no end of fascinating problems to solve.",
+    former_position: "English Teacher",
+    current_position: "Full-stack Web Developer"},
+
+  {name: "Donna",
+    img_url: "http://www.londonmet.ac.uk/media/london-metropolitan-university/london-met-photos/professional-service-departments-photos/international-office/staff-profiles/Agnieszka_profile.jpg",
+    blurb: "I've only scratched the surface, I look forward to continuing to learn, grow and be the best programmer I can be.",
+    body: "I could no longer ignore my desire to learn programming. I always enjoyed creating and selling custom programs for media properties however, I wanted to create from a new level, the programming side. It wasn't an easy decision making a career change but now that I've completed WDI, I know it was the right decision and I'm so glad I followed my heart. WDI challenged me every step of the way and reminded me that stepping outside my comfort zone can lead to growth, knowledge and the ability to take on new things. I was also reminded that it's ok to not know what you don't know. I've always looked to surround myself with people I can learn and grow from, GA and WDI provided this. I've only scratched the surface, I look forward to continuing to learn, grow and be the best programmer I can be.",
+    former_position: "Director of Sales",
+    current_position: "Software Engineer"},
+
+  {name: "Stanley",
+    img_url: "https://i.vimeocdn.com/portrait/107381_300x300.jpg",
+    blurb: "UXDI was perfect - short, intense, and practical. Worth every ounce!",
+    body: "I've been heavily involved in design and user experience for the last decade... while not really knowing it was officially UX. As Chief Technical Officer of the last company I worked with, my favorite projects always involved UX, creative solutions, an always making a better experience for our customers. Without mentors and formal education in UX, I wanted to seek this out, but I didn't have the need for a 2-year degree. UXDI was perfect - short, intense, and practical. Worth every ounce!",
+    former_position: "CTO-Chief Technoloy Officer",
+    current_position: "Principle Owner at Imagine Imagery"},
+
+  {name:"Kevin",
+    img_url: "http://www.colabmarketing.com/cache/widgetkit/gallery/9/1%20Tom%20Belgeonne%20Profile%20Black%20and%20White-73cd86ef41.png",
+    blurb: "I feel like a whole world has opened up",
+    body: "Initially I thought I wanted to learn to code because I wanted to work in that space that bridges the technical with the not-tech. But what I discovered through the GA WDI is that I really like being in the code. I feel like a whole world has opened up. I want to find a way to stay in it; to work with smart, creative people; to write clean maintainable code; to keep learning and sharing what I learn.",
+    former_position: "Painter",
+    current_position: "Security Analyst"}
+
 ])

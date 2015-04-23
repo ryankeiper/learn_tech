@@ -163,17 +163,19 @@ nav a {
 .to_quiz_button {
   display: inline-block;
   float: right;
+
+}
+
+.to_quiz_button a {
+  text-decoration: none;
+  display:block;
+  color: white;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #319FEE;
   line-height: 100px;
   text-align: center;
-}
-
-.to_quiz_button a {
-  text-decoration: none;
-  color: white;
 }
 
 
