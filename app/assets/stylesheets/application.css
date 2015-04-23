@@ -15,29 +15,42 @@
  */
 
 body{
+  margin: 0;
+  padding: 0;
   background-color: #E5E5E5;
-  font-family: Helvetica, 'Muli', sans-serif;
+  font-family: Futura, "Open Sans", sans-serif;
 }
 
-header{
-  background: rgb(17, 158, 158);
-  color: rgb(255, 255, 255);
-  margin-left: -.5%;
-  margin-top: -1.4%;
-  padding: 1%;
+header {
+  padding-top: 40px;
+  background-color: black;
+  width: 100%;
+  background-color: black;
 }
 
-header a{
-  color: rgb(255, 255, 255);
+.logo {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  padding: 0 0 0 0;
+  color: white;
+  font-size: 2em;
+}
+
+nav ul {
+  display: inline-block;
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: 50px;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
-}
-
-header h1{
-  font-size: 3em;
-}
-
-header a:hover{
-  color: red;
 }
 
 .subheader{

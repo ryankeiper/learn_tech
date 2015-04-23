@@ -10,15 +10,19 @@
 </head>
 <body>
   <header>
-    <a href = "/"><h1>Not in Tech... Yet</h1></a>
-    <a href = "/profiles">Profiles</a>
-    <a href = "/quiz">Quiz</a>
-    <a href = "/results/1">Resources</a>
-    <% if current_user %>
-      <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <a href = "/users/sign_in">Login</a>
-    <% end %>
+    <nav>
+      <div class="logo">NOT IN TECH...YET</div>
+      <ul>
+        <li><a href = "/profiles">Profiles</a></li>
+        <li><a href = "/quiz">Quiz</a></li>
+        <li><a href = "/results/1">Resources</a></li>
+        <% if current_user %>
+          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><a href = "/users/sign_in">Login</a></li>
+        <% end %>
+      </ul>
+    </nav>
   </header>
 
 <%= yield %>
