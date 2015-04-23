@@ -1,21 +1,27 @@
 <div class="container">
 	<div class="result_container">
 
-    <div class="result_header">HEAR OTHER PEOPLES STORIES IN ...</div>
-    <div class="result_type">PROFILES</div>
-    <div class="result_description">If you have an interest in technology but don't know if you can gain the skills or the knowledge or time needed to get you ready to enter the industry, don't worry. There are many "techys" that were once in your shoes and managed to not only gain the skills the needed, but also so to make use of the skills they already had. Here are there stories.</div>
+	  <div class="result_header">HEAR OTHER PEOPLES STORIES IN ...</div>
+	  <div class="result_type">PROFILES</div>
+	  <div class="result_description">If you have an interest in technology but
+			don't know if you can gain the skills or the knowledge or time needed to
+			get you ready to enter the industry, don't worry. There are many "techies"
+			that were once in your shoes and managed to not only gain the skills the
+			needed, but also so to make use of the skills they already had. Here are
+			their stories.
+		</div>
+</div>
 
-  </div>
-	
-<h2>They made the transtion, You can too!</h2>
 <div class="profile_container">
 	<% @profiles.each do |profile| %>
 			<div class="profile_individual">
 				<div class="profile_img"><%= link_to image_tag(profile.img_url, alt: "Profile Image"), profile_path(profile)%></div>
-				<p>Name:<a href="/#<%= profile.name %>"> <%= profile.name %></a></p>
-				<p class="former_position">Former Position: <%= profile.former_position %></p>
-				<p class="current_position">Current Position: <%= profile.current_position %></p>
-				<p class="blurb">"<%= profile.blurb %>"</p>
+				<p class="profile_name"><%= link_to profile.name, "/profiles/#{profile.id}" %></p>
+				<div class="profile_text">
+					<p><span class="profile_position">Former Position:</span> <%= profile.former_position %></p>
+					<p><span class="profile_position">Current Position:</span> <%= profile.current_position %></p>
+					<p>"<%= profile.blurb %>"</p>
+				</div>
 			</div>
 	<% end %>
 	</div>

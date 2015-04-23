@@ -2,8 +2,6 @@
 
 <%= form_for [@result, @comment] do |f| %>
 
-  <%= f.hidden_field :name, :value => current_user.user_name %>
-
   <%= f.label :body %>
   <%= f.text_area :body %>
 

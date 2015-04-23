@@ -49,23 +49,25 @@ header {
 
 .logo {
   display: inline-block;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 50px;
   padding: 0 0 0 0;
-  color: #319FEE;
+  color: black;
   font-size: 2em;
   font-weight: 800;
+  font-family: Futura, "Open Sans", sans-serif;
 }
 
 nav ul {
   display: inline-block;
   float: right;
-  margin: 0 20px 0 0;
+  margin: 0 50px 0 0;
 }
 
 nav li {
   display: inline-block;
   margin-left: 50px;
   font-size: 1.5em;
+  font-family: Futura, "Open Sans", sans-serif;
 }
 
 nav a {
@@ -84,20 +86,25 @@ nav a {
   margin: 20px 0 0 0;
   padding: 40px 0 40px 0;
   background: url("hero_bg1.jpg");
+  background-size: cover;
   font-family: "Open Sans";
 }
 
 .hero_container {
+  display: inline-flex;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 15% 0 15%;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero_container img {
   display: inline-block;
   width: 25%;
-  margin-right: 20px;
+  margin: 0 20px 0 0 ;
   border: 5px #319FEE solid;
   border-radius: 50%;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.3);
 }
 
 .hero_text {
@@ -107,13 +114,14 @@ nav a {
 }
 
 .hero_1, .hero_2 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 26px;
+  font-family: Roboto, sans-serif;
 }
 
 .hero_1 {
   color: #319FEE;
-  margin-bottom: -20px;
+  margin: 0 0 -20px 0;
 }
 
 .hero_2 {
@@ -123,6 +131,7 @@ nav a {
 
 .hero_3, .hero_4 {
   font-size: 18px;
+  font-family: Roboto, sans-serif;
 }
 
 .hero_3 {
@@ -144,24 +153,25 @@ nav a {
 }
 
 .to_quiz {
+  display: inline-flex;
   width: 40%;
-  margin: 0 auto;
+  margin: 0 30% 0 30%;
+  align-items: center;
+  justify-content: center;
 }
 
 .to_quiz_text {
   display: inline-block;
   float: left;
   width: 75%;
+  margin-right: 50px;
+  font-family: Roboto, sans-serif;
 }
 
 .to_quiz_header {
   font-size: 26px;
   font-weight: 400;
   color: #319FEE;
-}
-
-.to_quiz_body {
-
 }
 
 .to_quiz_button {
@@ -216,11 +226,12 @@ nav a {
 }
 
 .result_description {
-
+  font-family: Roboto, sans-serif;
 }
 
 .stats_container, .article_container, .meetup_container {
   border-bottom: 1px #319FEE solid;
+  font-family: Roboto, sans-serif;
 }
 
 .stats_title, .article_title {
@@ -299,19 +310,45 @@ nav a {
 }*/
 
 .profile_individual {
-  display:inline-block;
-  width:32%;
+  display: inline-block;
+  width: 31%;
+  margin: 0 17px 50px 0;
 }
 
 .profile_img {
   height: 200px;
   width: 200px;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  border: 5px #319FEE solid;
   overflow:hidden;
 }
 
 .profile_img img{
   height:200px;
-  width:200px;
+  width:100%;
+}
+
+.profile_name {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #319FEE;
+  text-align: center;
+}
+
+.profile_name a {
+  text-decoration: none;
+  color: white;
+}
+
+.profile_text {
+  font-family: Roboto, sans-serif;
+}
+
+.profile_position {
+  font-weight: bold;
 }
 
 .profile_show_container{
@@ -381,7 +418,11 @@ nav a {
 
 .quiz_container{
   width:70%;
-  margin-left:15%;
+  margin: 30px 0 0 15%;
+}
+
+.quiz_link {
+  text-decoration: none;
 }
 
 .second_result_container{

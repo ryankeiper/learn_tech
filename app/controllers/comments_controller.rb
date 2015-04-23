@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
 
   def create
     @result = Result.find( params[:result_id] )
-    @comment = @result.comments.new( comment_params )
+    @comment = @result.comments.new( name: current_user.user_name, body: comment_params["body"] )
     if @comment.save
       redirect_to @result
     else
