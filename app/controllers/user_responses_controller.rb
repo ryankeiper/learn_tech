@@ -20,7 +20,18 @@ class UserResponsesController < ApplicationController
 				# @final_result = @final_result.mode
 
 				# @final_result = @final_result.select if @final_result.length != 1
-				redirect_to "/quiz?most_frequent_answer=#{@most_frequent_answer}"
+				case @most_frequent_answer
+				when "A"
+					redirect_to "/results/2"
+				when "B"
+					redirect_to "/results/3"
+				when "C"
+					redirect_to "/results/4"
+				when "D"
+					redirect_to "/results/5"
+				when "E"
+					redirect_to "/results/6"
+				end
 			end
 		end
 	end
