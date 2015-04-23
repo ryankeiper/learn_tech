@@ -1,6 +1,6 @@
 <%= form_for [@result, @result.comments.new] do |f| %>
 
-  <%= f.text_field :body, placeholder: "Enter new comment here." %>
+  <%= f.text_area :body, placeholder: "Enter new comment here." %>
 
   <%= f.submit %>
 

@@ -1,13 +1,12 @@
-<div class = "subheader">
-
-  <h2>You should consider exploring:</h2>
-  <h1><%= @result.category %></h1>
-  <p><%= @result.description %></p>
-
-</div>
-
-
 <div class="container">
+
+  <div class="result_container">
+
+    <div class="result_header">YOU SHOULD CONSIDER EXPLORING</div>
+    <div class="result_type"><%= @result.category %></div>
+    <div class="result_description"><%= @result.description %></div>
+
+  </div>
 
   <h2>STATS</h2>
   <div class="stats_container">
