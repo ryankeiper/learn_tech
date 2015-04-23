@@ -160,19 +160,8 @@ h2 {
 }
 
 .profile_show_container{
-  width: 60%;
-  margin-left:15%;
+  width: 100%;
   padding:5%;
-}
-
-.profile_show_container img{
-  width:400px;
-  height:400px;
-  margin-left:25%;
-}
-
-.profile_show_container h1{
-  text-align:center;
 }
 
 .position1 {
@@ -185,4 +174,42 @@ h2 {
 
 .profile_show_container h3{
   font-size:1.25em;
+}
+
+.sidebar{
+  float:left;
+  width:20%;
+}
+
+.sidebar img{
+  width:400px;
+  height:400px;
+}
+
+.profile_show_container a{
+  text-align:center;
+  font-size:1.25em;
+  text-decoration:none;
+}
+
+.profile{
+  padding:5%;
+  margin-left:25%;
+  margin-right:5%;
+  width:40%;
+}
+
+.profile_menu{
+  position:fixed;
+  z-index:2;
+  width:15%;
+  height:100%;
+  margin-left:85%;
+}
+
+.profile_menu img{
+  width:100px;
+  height:100px;
+  margin-left:30%;
+  padding-top:4%;
 }
