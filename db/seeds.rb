@@ -52,7 +52,7 @@ results = Result.create([
     career_titles:"Web Designer: $37k - $105k, Graphic Designer: $31k - $79k, Art Director: $37k - $105k",
     api_category: "photoshop"},
 
-  {category:"Database/Security" ,
+  {category:"Database/\nSecurity" ,
     description:"Database security concerns the use of a broad range of information security controls to protect databases (potentially including the data, the database applications or stored functions, the database systems, the database servers and the associated network links) against compromises of their confidentiality, integrity and availability. Not all database jobs are based in security, some are in commerce or other areas, however all maintenace of security systems involves databases.",
     stats_salary_range: "",
     article_url:"http://www.usatoday.com/story/tech/2015/02/10/mark-burnett-10-million-passwords-fbi/23171375/",

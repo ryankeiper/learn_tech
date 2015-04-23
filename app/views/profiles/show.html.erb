@@ -17,20 +17,17 @@
 	  </div>
 </div>
 
-	<% @profiles.each do |profile| %>
 	<div class = "sidebar">
-		<%= image_tag profile.img_url, alt: "Profile Image", class: "img" %>
-	</br>
-		<h2>"<%= profile.blurb %>"</h2>
+		<%= image_tag @profile.img_url, alt: "Profile Image", class: "img" %>
+		<h2>"<%= @profile.blurb %>"</h2>
 	</div>
-		<div class="profile">
-			<a name ="<% profile.name %>"><h1><%= link_to profile.name, profile_path(profile), class: "name" %></h1></a>
-			<h3><span class="position1">Former Position: </span><%= profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= profile.current_position %></h3>
-			<p class="blurb">"<%= profile.blurb %>"</p>
-			<p class="body"><%= profile.body %></p>
-			<h2>Join <%= profile.name %> on the tech path</h2>
-			<h2><a href="/quiz">Take the Quiz</a></h2>
-		</div>
-	<% end %>
+	<div class="profile">
+      <h1>Name: <%= @profile.name %></h1>
+      <h3><span class="position1">Former Position: </span><%= @profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= @profile.current_position %></h3>
+       <p class="blurb">"<%= @profile.blurb %>"</p>
+        <p class="body"><%= @profile.body %></p>
+				<a href= "/quiz"><h1>Find Your Path</h1></a>
+    </div>
+	</div>
 
 </div>
