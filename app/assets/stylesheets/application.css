@@ -333,8 +333,8 @@ nav a {
 }
 
 .sidebar img{
-  width:400px;
-  height:400px;
+  width:300px;
+  height:300px;
 }
 
 .profile_show_container a{
@@ -344,7 +344,7 @@ nav a {
 }
 
 .profile{
-  padding:5%;
+  padding-bottom:8%;
   margin-left:25%;
   margin-right:5%;
   width:40%;
@@ -363,4 +363,18 @@ nav a {
   height:100px;
   margin-left:30%;
   padding-top:4%;
+}
+
+.sidebar h2{
+  color:rgb(50, 147, 218);
+}
+
+.quiz_container{
+  width:70%;
+  margin-left:15%;
+}
+
+.second_result_container{
+  width:70%;
+  margin-left:10%;
 }
