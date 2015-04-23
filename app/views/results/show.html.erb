@@ -39,11 +39,12 @@
 
     <h2>COMMENTS</h2>
     <div class="comments_container"
+
       <%= render "form" %>
 
       <% @comments.each do |comment| %>
       <div class="comments_individual">
-        <p class="comments_username">Job_Seeker123<p>
+        <p class="comments_username"><%= current_user.user_name %><p>
         <p class="comments_body"><%= comment.body %></p>
         <div class="comments_edit_delete">
           <%= link_to 'Edit', edit_result_comment_path( @result, comment ) %>

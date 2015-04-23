@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20150421164134) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string   "user_name"
     t.integer  "result_key"
     t.string   "zip_code"
     t.datetime "created_at",                          null: false
