@@ -106,7 +106,7 @@ profiles = Profile.create([
     body: "Initially I thought I wanted to learn to code because I wanted to work in that space that bridges the technical with the not-tech. But what I discovered through the GA WDI is that I really like being in the code. I feel like a whole world has opened up. I want to find a way to stay in it; to work with smart, creative people; to write clean maintainable code; to keep learning and sharing what I learn.",
     former_position: "Painter",
     current_position: "Security Analyst"}
-
+])
 
 q1 = Question.create(wording: "What level of challenge do you like in a career?")
 q1.question_answers.create([
