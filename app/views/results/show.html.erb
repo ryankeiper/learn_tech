@@ -1,45 +1,49 @@
 <div class = "subheader">
+
   <h2>You should consider exploring:</h2>
   <h1><%= @result.category %></h1>
-  <%= @result.description %>
+  <p><%= @result.description %></p>
+
 </div>
+
 
 <div class="container">
+
   <h2>Statistics</h2>
   <p>Possible career paths: <%= @result.career_titles%><p>
-
   <hr>
+
   <% if current_user || @result.id == 1 %>
-  <h2>Articles</h2>
-  <% 3.times do %>
-    <%= image_tag @result.article_img_url, alt: "article image", class: "article_img" %>
-    <p><%= @result.article_title %></p>
-    <p>(<%= @result.article_source %>)</p>
+
+    <h2>Articles</h2>
+    <% 3.times do %>
+      <%= image_tag @result.article_img_url, alt: "article image", class: "article_img" %>
+      <p><%= @result.article_title %></p>
+      <p>(<%= @result.article_source %>)</p>
+    <% end %>
+    <hr>
+
+    <h2>Meetups</h2>
+    <% @api_info.each do |meetup| %>
+      <div>
+        <%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %>
+        <p><%= link_to meetup[:name], meetup[:group_url] %></p>
+      </div>
+    <% end %>
+    <hr>
+
+    <h2>Comments</h2>
+    <%= render "form" %>
+
+    <% @comments.each do |comment| %>
+
+      <p><span>Username: Joe</span>
+      <%= comment.body %>
+      <%= link_to 'Edit', edit_result_comment_path( @result, comment ) %>
+      <%= link_to 'Delete', result_comment_path( @result, comment ), method: :delete %></p>
+
   <% end %>
-
-  <hr>
-  <h2>Meetups</h2>
-
-  <% @api_info.each do |meetup| %>
-    <div>
-      <%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %>
-      <p><%= link_to meetup[:name], meetup[:group_url] %></p>
-    </div>
-  <% end %>
-
-  <hr>
 </div>
-
-  <%= render "form" %>
-
-  <% @comments.each do |comment| %>
-
-    <p><span>Username: Joe</span>
-    <%= comment.body %>
-    <%= link_to 'Edit', edit_result_comment_path( @result, comment ) %>
-    <%= link_to 'Delete', result_comment_path( @result, comment ), method: :delete %></p>
-
-  <% end %>
 
 <% else %>
 

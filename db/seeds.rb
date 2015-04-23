@@ -17,7 +17,8 @@ results = Result.create([
     article_title:"Q&A: Tech careers that pay big",
     article_source:"USA Today",
     article_blurb:"Data analytics, security among best tech sectors for high paying jobs",
-    career_titles:"Game Developer:$80k-120k, Mobile App Developer:$85k-125k, Technical Lead:$85k-$140k"},
+    career_titles:"Game Developer:$80k-120k, Mobile App Developer:$85k-125k, Technical Lead:$85k-$140k",
+    api_category: "css"},
 
   {category:"User Experience",
     description:"User experience is the practical, experiential, affective, meaningful and valuable aspects of human–computer interaction and product ownership. User Experience Design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product.",
@@ -27,7 +28,8 @@ results = Result.create([
     article_title:"Shum guides Microsoft's design renaissance",
     article_source:"USA Today",
     article_blurb:"Ex-Nike Designer aims to help microsoft staffers connect with consumers and each other",
-    career_titles:"Usability Analysis:$66k-$127k, Information Architect:$80k-$126k, Interaction Designer:$74k-$115k etc."},
+    career_titles:"Usability Analysis:$66k-$127k, Information Architect:$80k-$126k, Interaction Designer:$74k-$115k etc.",
+    api_category: "ux"},
 
   {category:"Development",
     description:"Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network). It can range from developing the simplest static single page of plain text to the most complex web-based internet applications, electronic businesses, and social network services.",
@@ -37,7 +39,8 @@ results = Result.create([
     article_title:"Best, Worst entry level jobs: Boilermaker, anyone?",
     article_source:"USA Today",
     article_blurb:"Wallet Hub compares 109 different types of entry level jobs based on 11 key metrics",
-    career_titles:"Web Developer:$54k-$117k, Web Designer:$37k-$105k, Front-end Developer:$54k-$129k"},
+    career_titles:"Web Developer:$54k-$117k, Web Designer:$37k-$105k, Front-end Developer:$54k-$129k",
+    api_category: "ruby"},
 
   {category:"Visual Design" ,
     description:"Visual Design is the graphics and look behind tech and internet products. It is based more around aesthetics than usability and also focuses somewhat on branding and attracting consumers to the tech company or service.",
@@ -47,7 +50,8 @@ results = Result.create([
     article_title:"The week in Tech: 5-must know things",
     article_source:"USA Today",
     article_blurb:"Here's what you need to know about the week in tech",
-    career_titles:"Web Designer:$37k-$105k, Graphic Designer:$31k-$79k, Art Director:$37k-$105k"},
+    career_titles:"Web Designer:$37k-$105k, Graphic Designer:$31k-$79k, Art Director:$37k-$105k",
+    api_category: "photoshop"},
 
   {category:"Database/Security" ,
     description:"Database security concerns the use of a broad range of information security controls to protect databases (potentially including the data, the database applications or stored functions, the database systems, the database servers and the associated network links) against compromises of their confidentiality, integrity and availability. Not all database jobs are based in security, some are in commerce or other areas, however all maintenace of security systems involves databases.",
@@ -57,7 +61,8 @@ results = Result.create([
     article_title:"Security researcher posts 10 million passwords",
     article_source:"USA Today",
     article_blurb:"The release is legal now but could get 10 years in prison under a new law",
-    career_titles:"Database Administrator:$41k-$65k, Data Architect:$80k-$120k, Security Specialist:$60k-$85k"},
+    career_titles:"Database Administrator:$41k-$65k, Data Architect:$80k-$120k, Security Specialist:$60k-$85k",
+    api_category: "database"},
 
   {category:"Management",
     description:"Technology management is a set of management disciplines that allows organizations to manage their technological fundamentals to create competitive advantage. Typical concepts include strategy, forecasting, roadmapping and project portfolios.",
@@ -67,7 +72,8 @@ results = Result.create([
     article_title:"Lessons learned from a new era of finance and tech" ,
     article_source:"USA Today",
     article_blurb:"The stories we're hering about finance chiefs is changing. Just follow Wall Street and Silicon Valley",
-    career_titles:"Digital Project Manager:$53k-$117k, SEO Consultant:$80k-$120k, Digital Marketing Manager:$70k-$130k"},
+    career_titles:"Digital Project Manager:$53k-$117k, SEO Consultant:$80k-$120k, Digital Marketing Manager:$70k-$130k",
+    api_category: "business"},
 ])
 
 # t.string   "category"

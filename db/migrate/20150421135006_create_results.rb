@@ -12,6 +12,7 @@ class CreateResults < ActiveRecord::Migration
       t.string :article_source
       t.text :article_blurb
       t.text :career_titles
+      t.string :api_category
       t.timestamps null: false
     end
   end
