@@ -1,0 +1,10 @@
+<p><%= @comment.body %></p>
+
+<%= form_for [@result, @comment] do |f| %>
+  
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.submit %>
+
+<% end %>

@@ -38,8 +38,17 @@ ActiveRecord::Schema.define(version: 20150421164134) do
   create_table "results", force: :cascade do |t|
     t.string   "category"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "stats_salary_range"
+    t.string   "stats_num_jobs"
+    t.text     "article_url"
+    t.text     "article_img_url"
+    t.string   "article_title"
+    t.string   "article_source"
+    t.text     "article_blurb"
+    t.text     "career_titles"
+    t.string   "api_category"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "users", force: :cascade do |t|
