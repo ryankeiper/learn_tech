@@ -9,40 +9,49 @@
 
 <div class="container">
 
-  <h2>Statistics</h2>
-  <p>Possible career paths: <%= @result.career_titles%><p>
-  <hr>
+  <h2>STATS</h2>
+  <div class="stats_container">
+    <p><span class="stats_title">Possible career paths:</span> <%= @result.career_titles%><p>
+  </div>
 
   <% if current_user || @result.id == 1 %>
 
-    <h2>Articles</h2>
-    <% 3.times do %>
-      <%= image_tag @result.article_img_url, alt: "article image", class: "article_img" %>
-      <p><%= @result.article_title %></p>
-      <p>(<%= @result.article_source %>)</p>
-    <% end %>
-    <hr>
+    <h2>ARTICLES</h2>
+    <div class="article_container">
+      <% 3.times do %>
+        <div class="article_individual">
+          <%= image_tag @result.article_img_url, alt: "article image", class: "article_img" %>
+          <p class="article_title"><%= @result.article_title %></p>
+          <p><%= @result.article_source %></p>
+        </div>
+      <% end %>
+    </div>
 
-    <h2>Meetups</h2>
-    <% @api_info.each do |meetup| %>
-      <div>
-        <%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %>
-        <p><%= link_to meetup[:name], meetup[:group_url] %></p>
+    <h2>MEETUPS</h2>
+    <div class="meetup_container">
+      <% @api_info.each do |meetup| %>
+        <div class="meetup_individual">
+          <div class="meetup_img_container"><%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %></div>
+          <p class="meetup_title"><%= link_to meetup[:name], meetup[:group_url] %></p>
+        </div>
+      <% end %>
+    </div>
+
+    <h2>COMMENTS</h2>
+    <div class="comments_container"
+      <%= render "form" %>
+
+      <% @comments.each do |comment| %>
+      <div class="comments_individual">
+        <p class="comments_username">Job_Seeker123<p>
+        <p class="comments_body"><%= comment.body %></p>
+        <div class="comments_edit_delete">
+          <%= link_to 'Edit', edit_result_comment_path( @result, comment ) %>
+          <%= link_to 'Delete', result_comment_path( @result, comment ), method: :delete %>
+        </div>
       </div>
-    <% end %>
-    <hr>
-
-    <h2>Comments</h2>
-    <%= render "form" %>
-
-    <% @comments.each do |comment| %>
-
-      <p><span>Username: Joe</span>
-      <%= comment.body %>
-      <%= link_to 'Edit', edit_result_comment_path( @result, comment ) %>
-      <%= link_to 'Delete', result_comment_path( @result, comment ), method: :delete %></p>
-
-  <% end %>
+      <% end %>
+    </div>
 </div>
 
 <% else %>
