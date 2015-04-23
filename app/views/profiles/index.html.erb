@@ -5,7 +5,7 @@
 	<% @profiles.each do |profile| %>
 					<div class="profile_individual">
 						<div class="profile_img"><%= link_to image_tag(profile.img_url, alt: "Profile Image"), profile_path(profile)%></div>
-						<p>Name: <%= link_to profile.name, profile_path(profile), class: "name" %></p>
+						<p>Name:<a href="/#<%= profile.name %>"> <%= profile.name %></a></p>
 						<p class="former_position">Former Position: <%= profile.former_position %></p>
 						<p class="current_position">Current Position: <%= profile.current_position %></p>
 						<p class="blurb">"<%= profile.blurb %>"</p>
