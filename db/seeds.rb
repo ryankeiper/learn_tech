@@ -70,6 +70,81 @@ results = Result.create([
     career_titles:"Digital Project Manager:$53k-$117k, SEO Consultant:$80k-$120k, Digital Marketing Manager:$70k-$130k"},
 ])
 
+q1 = Question.create(wording: "What level of challenge do you like in a career?")
+q1.question_answers.create([
+    {wording: 'A."I love pressure! I was born to compete in a dog-eat-dog world!"', value: "A"},
+    {wording: 'B."I\'m a creative soul, and nothing satisfies me like creative problem solving."', value: "B"},
+    {wording: 'C."I\'m very playful, so I need some competition to keep me interested."', value: "C"},
+    {wording: 'D."By all means, throw the occasional interesting problem my way."', value: "D"},
+    {wording: 'E."I\'m not afraid of boredom. I know the world needs sentries."', value: "E"}
+    ])
+
+q2 = Question.create(wording: "What educational requirements can you handle for your job?")
+q2.question_answers.create([
+    {wording: 'A."My whole life is learning. I eat 1000-page Unix manuals for sustenance."', value: "A"},
+    {wording: 'B."Oh, I love going where most fear to tread; got degrees you can\'t pronounce."', value: "B"},
+    {wording: 'C."Yes, I love to learn. I\'m always interested in something new."', value: "C"},
+    {wording: 'D."Give me some training, but I\'d still rather pursue my own study course."', value: "D"},
+    {wording: 'E."I have a high school diploma, and consider myself lucky to have that."', value: "E"}
+    ])
+
+q3 = Question.create(wording: "How are you at engineering skills?")
+q3.question_answers.create([
+    {wording: 'A."I\'m beyond engineering, all the way to being an architect. I design whole networks in my head."', value: "A"},
+    {wording: 'B."I am an engineer first of all."', value: "B"},
+    {wording: 'C."I\'m pedantic. I build stuff for fun."', value: "C"},
+    {wording: 'D."I can work with tools, but mostly my free creative spirit drives me."', value: "D"},
+    {wording: 'E."I can\'t operate a washing machine without asking my spouse for help."', value: "E"}
+    ])
+
+q4 = Question.create(wording: "How much freedom do you like to have in your career?")
+q4.question_answers.create([
+    {wording: 'A."I cannot be shut in, ever. I must soar the skies or I\'m not alive."', value: "A"},
+    {wording: 'B."Stand back! I\'ll explore the territory and blaze a trail for the rest of you."', value: "B"},
+    {wording: 'C."The only constraints I can handle is the specifications of what the customer wants."', value: "C"},
+    {wording: 'D."I like to solve my own problems within a very narrow scope."', value: "D"},
+    {wording: 'E."No freedom for me, thanks. I\'ll just stay in this little box."', value: "E"}
+    ])
+
+q5 = Question.create(wording: "Are you looking for a long-term position?")
+q5.question_answers.create([
+    {wording: 'A."I want to take exactly one interview in my lifetime. The right one."', value: "A"},
+    {wording: 'B."I\'m here for a career, not a summer job. I\'ll pass up a quick reward for a long-term payoff."', value: "B"},
+    {wording: 'C."Like a musician in a band, I like short gigs. Sometimes, a projects engages me."', value: "C"},
+    {wording: 'D."I like short-term commitments. maybe a year here, a year there."', value: "D"},
+    {wording: 'E."Heck, no. Give me freelance work. I might change my mind later."', value: "E"}
+    ])
+
+q6 = Question.create(wording: "What are your salary requirements?")
+q6.question_answers.create([
+    {wording: 'A."I want not just serious money, but the power that comes with a high position."', value: "A"},
+    {wording: 'B."I want serious money."', value: "B"},
+    {wording: 'C."I\'d like a decent living wage, with some potential to make it big."', value: "C"},
+    {wording: 'D."Oh, I\'m so busy being creative that I don\'t care what I get paid, as long as I eat."', value: "D"},
+    {wording: 'E."Pay, shmay. I have ad revenue from my websites and my side hobbies to get me by."', value: "E"}
+    ])
+
+q7 = Question.create(wording: "How much flexibility do you need in a career?")
+q7.question_answers.create([
+    {wording: 'A."I love chaos! I love waking up each morning not knowing if the world will change today."', value: "A"},
+    {wording: 'B."If my industry doesn\'t revolutionize itself every five years, I get bored."', value: "B"},
+    {wording: 'C."I like a steady environment, but the occasional curve ball keeps things interesting."', value: "C"},
+    {wording: 'D."I need the industry I work in to be pretty much the same year-in year-out."', value: "D"},
+    {wording: 'E."I\'m a rock. Once I\'m planted, there I stay."', value: "E"}
+    ])
+
+q8 = Question.create(wording: "How much are you willing to travel for a career?")
+q8.question_answers.create([
+    {wording: 'A."I will go where the work is. Where I am doesn\'t matter at all."', value: "A"},
+    {wording: 'B."I\'m pretty mobile, always on the go. I love an adventure."', value: "B"},
+    {wording: 'C."Oh, I have enough gypsy in me to wander occasionally."', value: "C"},
+    {wording: 'D."I\'m comfortable where I am, save for flying out to Vegas for a convention once."', value: "D"},
+    {wording: 'E."What, me, move? Never!"', value: "E"}
+    ])
+
+
+
+
 # t.string   "category"
 # t.text     "description"
 # t.string   "stats_salary_range"
