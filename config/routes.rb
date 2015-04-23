@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   resources :questions do
     resources :question_answers
+    resources :user_responses
   end
 
   # Example of regular route:

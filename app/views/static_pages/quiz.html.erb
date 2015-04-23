@@ -1,19 +1,5 @@
 <h2>THE QUIZ!</h2>
-
-<% @questions.each do |question| %>
-  <%= question.wording %>
-  <%= form_for question do |f| %>
-  	<% question.question_answers.each do |answer| %>
-    <%# new_reponse = UQR.new() %>
-    
-	  <%= f.radio_button :question_id, answer.id %>
-	  <%= f.label "answer_for_question_#{question.id}", answer.wording %>
-	  
-	  <%= f.submit %>
-	<% end %>
-  <% end %>
-<% end %>
-
+<%= @most_frequent_answer %>
 <ol>
   <li><%= link_to "Front End Designer", "/results/2"%></li>
   <li><%= link_to "Back End Designer", "/results/3"%></li>
