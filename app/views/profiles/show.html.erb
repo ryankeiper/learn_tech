@@ -1,8 +1,10 @@
-<div class="profile">
-	<%= image_tag @profile.img_url, alt: "Profile Image", class: "img" %>
-	<p class="name">Name: <%= @profile.name %></p>
-	<p class="former_position">Former Position: <%= @profile.former_position %></p>
-	<p class="current_position">Current Position: <%= @profile.current_position %></p>
-	<p class="blurb">"<%= @profile.blurb %>"</p>
-	<p class="body"><%= @profile.body %></p>
+
+<div class="profile_show_container">
+	<div class="profile">
+		<%= image_tag @profile.img_url, alt: "Profile Image", class: "img" %>
+		<h1>Name: <%= @profile.name %></h1>
+		<h3><span class="position1">Former Position: </span><%= @profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= @profile.current_position %></h3>
+		<p class="blurb">"<%= @profile.blurb %>"</p>
+		<p class="body"><%= @profile.body %></p>
+	</div>
 </div>
