@@ -408,7 +408,11 @@ nav a {
 
 .quiz_container{
   width:70%;
-  margin-left:15%;
+  margin: 30px 0 0 15%;
+}
+
+.quiz_link {
+  text-decoration: none;
 }
 
 .second_result_container{
