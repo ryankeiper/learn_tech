@@ -52,7 +52,7 @@ results = Result.create([
     career_titles:"Web Designer: $37k - $105k, Graphic Designer: $31k - $79k, Art Director: $37k - $105k",
     api_category: "photoshop"},
 
-  {category:"Database/Security" ,
+  {category:"Database Security" ,
     description:"Database security concerns the use of a broad range of information security controls to protect databases (potentially including the data, the database applications or stored functions, the database systems, the database servers and the associated network links) against compromises of their confidentiality, integrity and availability. Not all database jobs are based in security, some are in commerce or other areas, however all maintenace of security systems involves databases.",
     stats_salary_range: "",
     article_url:"http://www.usatoday.com/story/tech/2015/02/10/mark-burnett-10-million-passwords-fbi/23171375/",
@@ -78,36 +78,36 @@ results = Result.create([
 profiles = Profile.create([
 
   {name: "Fatmata",
-    img_url: "http://www.kemri-wellcome.org/people_images/Eunice-Nduati-Black-and-White.jpg",
+    img_url: "fatmata.jpg",
     blurb: "I love problem solving am really finding my stride with the back end element of this course.",
     body: "After 5 years in the post college world, trying to make it as an artist/waitress, I sat down to make a personal website and realized I didn't even know where to begin. I took a GA's front end web development in the fall and fell in love with making websites, and utilizing my undergraduate training in Mathematics. I love problem solving am really finding my stride with the back end element of this course.",
     former_position: "Assistant Manager",
     current_position: "Front-end Web Developer"},
 
   {name: "Andrew",
-    img_url: "http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg",
+    img_url: "andrew.jpg",
     blurb: "It's amazing to see real people using and benefiting from my work every day",
     body: "I came here to learn how to make things that truly mattered to people, and that's exactly what I got. Using the skills I learned from WDI, I've built web apps that help people learn English and stay motivated to exercise. It's amazing to see real people using and benefiting from my work every day. WDI was also a pleasure for me because I love puzzles, and coding has no end of fascinating problems to solve.",
     former_position: "English Teacher",
     current_position: "Full-stack Web Developer"},
 
   {name: "Donna",
-    img_url: "http://www.londonmet.ac.uk/media/london-metropolitan-university/london-met-photos/professional-service-departments-photos/international-office/staff-profiles/Agnieszka_profile.jpg",
-    blurb: "I've only scratched the surface, I look forward to continuing to learn, grow and be the best programmer I can be.",
+    img_url: "donna.jpg",
+    blurb: "I wanted to create from a new level. I've only scratched the surface, I look forward to continuing to learn, grow and be the best programmer I can be.",
     body: "I could no longer ignore my desire to learn programming. I always enjoyed creating and selling custom programs for media properties however, I wanted to create from a new level, the programming side. It wasn't an easy decision making a career change but now that I've completed WDI, I know it was the right decision and I'm so glad I followed my heart. WDI challenged me every step of the way and reminded me that stepping outside my comfort zone can lead to growth, knowledge and the ability to take on new things. I was also reminded that it's ok to not know what you don't know. I've always looked to surround myself with people I can learn and grow from, GA and WDI provided this. I've only scratched the surface, I look forward to continuing to learn, grow and be the best programmer I can be.",
     former_position: "Director of Sales",
     current_position: "Software Engineer"},
 
   {name: "Stanley",
-    img_url: "https://i.vimeocdn.com/portrait/107381_300x300.jpg",
+    img_url: "stanley.jpg",
     blurb: "UXDI was perfect - short, intense, and practical. Worth every ounce!",
     body: "I've been heavily involved in design and user experience for the last decade... while not really knowing it was officially UX. As Chief Technical Officer of the last company I worked with, my favorite projects always involved UX, creative solutions, an always making a better experience for our customers. Without mentors and formal education in UX, I wanted to seek this out, but I didn't have the need for a 2-year degree. UXDI was perfect - short, intense, and practical. Worth every ounce!",
     former_position: "CTO-Chief Technoloy Officer",
     current_position: "Principle Owner at Imagine Imagery"},
 
   {name:"Kevin",
-    img_url: "http://www.colabmarketing.com/cache/widgetkit/gallery/9/1%20Tom%20Belgeonne%20Profile%20Black%20and%20White-73cd86ef41.png",
-    blurb: "I feel like a whole world has opened up",
+    img_url: "kevin.png",
+    blurb: "I feel like a whole world has opened up. I want to find a way to stay in it. To work with smart, creative people. To write clean maintainable code.",
     body: "Initially I thought I wanted to learn to code because I wanted to work in that space that bridges the technical with the not-tech. But what I discovered through the GA WDI is that I really like being in the code. I feel like a whole world has opened up. I want to find a way to stay in it; to work with smart, creative people; to write clean maintainable code; to keep learning and sharing what I learn.",
     former_position: "Painter",
     current_position: "Security Analyst"}

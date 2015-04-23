@@ -24,7 +24,7 @@
 		<h2>"<%= profile.blurb %>"</h2>
 	</div>
 		<div class="profile">
-			<a name ="<% profile.name %>"><h1><%= link_to profile.name, profile_path(profile), class: "name" %></h1></a>
+			<h1><% profile.name %></h1>
 			<h3><span class="position1">Former Position: </span><%= profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= profile.current_position %></h3>
 			<p class="blurb">"<%= profile.blurb %>"</p>
 			<p class="body"><%= profile.body %></p>
