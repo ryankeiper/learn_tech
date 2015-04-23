@@ -368,3 +368,13 @@ nav a {
 .sidebar h2{
   color:rgb(50, 147, 218);
 }
+
+.quiz_container{
+  width:70%;
+  margin-left:15%;
+}
+
+.second_result_container{
+  width:70%;
+  margin-left:10%;
+}
