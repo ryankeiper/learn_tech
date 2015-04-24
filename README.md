@@ -2,9 +2,13 @@ Our app is on Heroku! Check it out here: https://protected-atoll-2130.herokuapp.
 
 Want to run it on your local server? Follow these steps on the command line...
 
-1. Create a git repo on your computer: `git init`
-2. Clone this repo: `git clone git@github.com:amaseda/learn_tech.git`
-3. Run rails server: `rails s`
+1. Create a git repo on your computer: `$ git init`
+2. Clone this repo: `$ git clone git@github.com:amaseda/learn_tech.git`
+3. Run: `$ bundle install`
+4. Run: `$ rake db:create`
+5. Run: `$ rake db:migrate`
+6. Run: `$ rake db:seed`
+7. Run rails server: `rails s`
 
 Want to improve our app? Follow these steps...
 
