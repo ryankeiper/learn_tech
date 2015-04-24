@@ -1,45 +1,20 @@
-<div class= "profile_menu">
+<div class= "show_profile_menu">
 	<% @profiles.each do |profile| %>
 		<a href="<%= profile.id %>"><%= image_tag profile.img_url, alt: "Profile Image", class: "img" %></a>
-		</br>
 	<% end %>
 </div>
 
-
-<div class="profile_show_container">
-	<div class="second_result_container">
-		<div class="result_container">
-
-	    <div class="result_header">HEAR OTHER PEOPLES STORIES IN ...</div>
-	    <div class="result_type">PROFILES</div>
-	    <div class="result_description">If you have an interest in technology but don't know if you can gain the skills or the knowledge or time needed to get you ready to enter the industry, don't worry. There are many "techys" that were once in your shoes and managed to not only gain the skills the needed, but also so to make use of the skills they already had. Here are there stories.</div>
-
-	  </div>
-</div>
-
-	<div class = "sidebar">
+<div class="show_profile_container">
+	<div class = "show_profile_img">
 		<%= image_tag @profile.img_url, alt: "Profile Image", class: "img" %>
-		<h2>"<%= @profile.blurb %>"</h2>
+		<div class="blurb"><%= @profile.blurb %></div>
 	</div>
-	<div class="profile">
-      <h1>Name: <%= @profile.name %></h1>
-      <h3><span class="position1">Former Position: </span><%= @profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= @profile.current_position %></h3>
-       <p class="blurb">"<%= @profile.blurb %>"</p>
-        <p class="body"><%= @profile.body %></p>
-				<a href= "/quiz"><h1>Find Your Path</h1></a>
-    </div>
-	</div>
-<<<<<<< HEAD
-=======
-		<div class="profile">
-			<h1><% profile.name %></h1>
-			<h3><span class="position1">Former Position: </span><%= profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= profile.current_position %></h3>
-			<p class="blurb">"<%= profile.blurb %>"</p>
-			<p class="body"><%= profile.body %></p>
-			<h2>Join <%= profile.name %> on the tech path</h2>
-			<h2><a href="/quiz">Take the Quiz</a></h2>
-		</div>
-	<% end %>
->>>>>>> 4423d6629899a11cb00f781c1af3b8d3c68ea2a2
 
+	<div class="show_profile_text">
+	  <h2 class="profile_title"><%= @profile.name.upcase %></h2>
+		<p><span class="profile_position">Former Position:</span> <%= @profile.former_position %></p>
+		<p><span class="profile_position">Current Position:</span> <%= @profile.current_position %></p>
+	  <p class="body"><%= @profile.body %></p>
+		<a class="profile_to_quiz" href= "/questions/1"><h2>FIND YOUR PATH</h2></a>
+	</div>
 </div>

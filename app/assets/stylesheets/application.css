@@ -80,6 +80,10 @@ nav a {
 /*********** HOME **************/
 /*******************************/
 
+.hero_link {
+  text-decoration: none;
+}
+
 .hero {
   width: 100%;
   max-height: 400px;
@@ -130,6 +134,7 @@ nav a {
 }
 
 .hero_3, .hero_4 {
+  color: black;
   font-size: 18px;
   font-family: Roboto, sans-serif;
 }
@@ -205,7 +210,7 @@ nav a {
 }
 
 .result_header, .result_type, .result_description {
-  width: 50%;
+  width: 60%;
   margin: 20px auto 20px auto;
 }
 
@@ -227,6 +232,10 @@ nav a {
 
 .result_description {
   font-family: Roboto, sans-serif;
+}
+
+.result_description_quiz {
+  text-align: center;
 }
 
 .stats_container, .article_container, .meetup_container {
@@ -253,6 +262,11 @@ nav a {
   border: 5px #319FEE solid;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.article_link {
+  text-decoration: none;
+  color: black;
 }
 
 .meetup_title a {
@@ -294,20 +308,16 @@ nav a {
   font-weight: bold;
 }
 
+.result_page_end {
+  margin-bottom: 40px;
+}
+
 
 /*******************************/
 /********** PROFILES  **********/
 /*******************************/
 
-.profile_container{
-  /*width: 70%;*/
-  /*margin-left: 10%;*/
-}
-
-/*.profile_container img{
-  width:250px;
-  height:250px;
-}*/
+/********** INDEX  **********/
 
 .profile_individual {
   display: inline-block;
@@ -351,70 +361,82 @@ nav a {
   font-weight: bold;
 }
 
-.profile_show_container{
+
+/**********  SHOW  **********/
+
+.show_profile_menu{
+  position: fixed;
+  z-index: 2;
+  width: 15%;
+  height: 100%;
+  margin: 30px 0 0 85%;
+}
+
+.show_profile_menu img{
+  width: 100px;
+  height: 100px;
+  margin: 0 0 10px 30%;
+  border-radius: 50%;
+  border: 2px #319FEE solid;
+}
+
+.show_profile_container {
   width: 100%;
-  padding:5%;
+  margin: 50px auto 0 auto;
 }
 
-.position1 {
-  color:blue;
+.show_profile_img {
+  display: inline-block;
+  float: left;
+  width: 35%;
+  margin: 30px 0 50px 10%;
 }
 
-.position2 {
-  color:red;
+.show_profile_img img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  border: 5px #319FEE solid;
+  border-radius: 50%;
 }
 
-.profile_show_container h3{
-  font-size:1.25em;
+.blurb {
+  width: 75%;
+  font-size: 28px;
+  color: #319FEE;
 }
 
-.sidebar{
-  float:left;
-  width:20%;
+.show_profile_text {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  font-family: Roboto, sans-serif;
 }
 
-.sidebar img{
-  width:300px;
-  height:300px;
+.profile_title {
+  color: #319FEE;
+  font-weight: bold;
 }
 
-.profile_show_container a{
-  text-align:center;
-  font-size:1.25em;
-  text-decoration:none;
+.profile_to_quiz {
+  display: block;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #319FEE;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
 }
 
-.profile{
-  padding-bottom:8%;
-  margin-left:25%;
-  margin-right:5%;
-  width:40%;
-}
 
-.profile_menu{
-  position:fixed;
-  z-index:2;
-  width:15%;
-  height:100%;
-  margin-left:85%;
-}
+/*******************************/
+/************  QUIZ  ***********/
+/*******************************/
 
-.profile_menu img{
-  width:100px;
-  height:100px;
-  margin-left:30%;
-  padding-top:4%;
-}
-
-.profile img{
-  width:350px;
-  height:350px;
-  margin-left:20%;
-}
-
-.sidebar h2{
-  color:rgb(50, 147, 218);
-}
+/**********  LANDING  **********/
 
 .quiz_container{
   width:70%;
@@ -425,10 +447,37 @@ nav a {
   text-decoration: none;
 }
 
-.second_result_container{
-  width:70%;
-  margin-left:10%;
+
+/*********  QUESTION  **********/
+
+.question_container {
+  width: 70%;
+  margin: 100px auto 0 auto;
+  border: 5px white solid;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: Roboto, sans-serif;
 }
+
+.question_actual {
+  color: #319FEE;
+}
+
+.question_container input[type=submit] {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #319FEE;
+  color: white;
+  font-weight: bold;
+  font-family: Futura, "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+
+/*******************************/
+/********* USER AUTH  **********/
+/*******************************/
 
 .login_container{
   margin-left:45%;

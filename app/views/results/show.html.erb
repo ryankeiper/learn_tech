@@ -2,7 +2,9 @@
 
   <div class="result_container">
 
-    <div class="result_header">YOU SHOULD CONSIDER EXPLORING</div>
+    <% if @result.id != 1 %>
+      <div class="result_header">YOU SHOULD CONSIDER EXPLORING</div>
+    <% end %>
     <div class="result_type"><%= @result.category %></div>
     <div class="result_description"><%= @result.description %></div>
 
@@ -19,8 +21,8 @@
     <div class="article_container">
       <% 3.times do %>
         <div class="article_individual">
-          <%= image_tag @result.article_img_url, alt: "article image", class: "article_img" %>
-          <p class="article_title"><%= @result.article_title %></p>
+          <a href="<%= @result.article_url %>"><%= image_tag @result.article_img_url, alt: "article image", class: "article_img" %></a>
+          <a class="article_link" href="<%= @result.article_url %>"><p class="article_title"><%= @result.article_title %></p></a>
           <p><%= @result.article_source %></p>
         </div>
       <% end %>
@@ -30,7 +32,7 @@
     <div class="meetup_container">
       <% @api_info.each do |meetup| %>
         <div class="meetup_individual">
-          <div class="meetup_img_container"><%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %></div>
+          <a href="<%= meetup[:group_url] %>"><div class="meetup_img_container"><%= image_tag meetup[:photo_url], alt: "meetup logo", class: "meetup_img" %></div></a>
           <p class="meetup_title"><%= link_to meetup[:name], meetup[:group_url] %></p>
         </div>
       <% end %>
@@ -65,3 +67,5 @@
   <%= link_to "Click here to sign up and get tech career resources tailored to you!", new_user_registration_path %>
 
 <% end %>
+
+<div class="result_page_end"></div>

@@ -1,11 +1,15 @@
-<h3><%= @question.id %>. <%= @question.wording %></h3>
+<div class="question_container">
 
-<% @user_response = @question.user_responses.new %>
+	<h3 class="question_actual"><%= @question.id %>. <%= @question.wording %></h3>
 
-<%= form_for [@question, @user_response] do |f| %>
-	<% @question.question_answers.each do |answer| %>
-	  <p><%= f.radio_button :response, answer.value %>
-	  <%= f.label "answer_for_question_#{@question.id}", answer.wording %></p>
+	<% @user_response = @question.user_responses.new %>
+
+	<%= form_for [@question, @user_response] do |f| %>
+		<% @question.question_answers.each do |answer| %>
+		  <p><%= f.radio_button :response, answer.value %>
+		  <%= f.label "answer_for_question_#{@question.id}", answer.wording %></p>
+		<% end %>
+		<%= f.submit "NEXT" %>
 	<% end %>
-	<%= f.submit "Next" %>
-<% end %>
+
+</div>
