@@ -18,7 +18,7 @@ class UserResponsesController < ApplicationController
 				frequency_of_answer = @final_result.inject(Hash.new(0)) {|freq, answer| freq[answer] += 1; freq}
 				@most_frequent_answer = @final_result.max_by { |answer| frequency_of_answer[answer] }
 				# @final_result = @final_result.mode
-
+				
 				# @final_result = @final_result.select if @final_result.length != 1
 				case @most_frequent_answer
 				when "A"
