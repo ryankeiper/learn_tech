@@ -5,6 +5,9 @@
 	<% @user_response = @question.user_responses.new %>
 
 	<%= form_for [@question, @user_response] do |f| %>
+
+		<!-- Within the form_for, the following code loops through each answer, making it a radio button and displaying it. The nested conditional if statement is to make the first radio button the one selected by default. -->
+
 		<% @question.question_answers.each do |answer| %>
 		  <% if answer.wording[0] == "A" %>
 			  <p><%= f.radio_button :response, answer.value, checked: true %>
