@@ -17,12 +17,20 @@
 	  </div>
 </div>
 
-	<% @profiles.each do |profile| %>
 	<div class = "sidebar">
-		<%= image_tag profile.img_url, alt: "Profile Image", class: "img" %>
-	</br>
-		<h2>"<%= profile.blurb %>"</h2>
+		<%= image_tag @profile.img_url, alt: "Profile Image", class: "img" %>
+		<h2>"<%= @profile.blurb %>"</h2>
 	</div>
+	<div class="profile">
+      <h1>Name: <%= @profile.name %></h1>
+      <h3><span class="position1">Former Position: </span><%= @profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= @profile.current_position %></h3>
+       <p class="blurb">"<%= @profile.blurb %>"</p>
+        <p class="body"><%= @profile.body %></p>
+				<a href= "/quiz"><h1>Find Your Path</h1></a>
+    </div>
+	</div>
+<<<<<<< HEAD
+=======
 		<div class="profile">
 			<h1><% profile.name %></h1>
 			<h3><span class="position1">Former Position: </span><%= profile.former_position %> <----------------> <span class="position2">Current Position: </span> <%= profile.current_position %></h3>
@@ -32,5 +40,6 @@
 			<h2><a href="/quiz">Take the Quiz</a></h2>
 		</div>
 	<% end %>
+>>>>>>> 4423d6629899a11cb00f781c1af3b8d3c68ea2a2
 
 </div>

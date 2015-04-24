@@ -21,6 +21,10 @@ body {
   font-family: Futura, "Open Sans", sans-serif;
 }
 
+body p{
+  font-size:1.2em;
+}
+
 .container {
   margin: 30px auto 0 auto;
   width: 70%;
@@ -402,6 +406,12 @@ nav a {
   padding-top:4%;
 }
 
+.profile img{
+  width:350px;
+  height:350px;
+  margin-left:20%;
+}
+
 .sidebar h2{
   color:rgb(50, 147, 218);
 }
@@ -418,4 +428,9 @@ nav a {
 .second_result_container{
   width:70%;
   margin-left:10%;
+}
+
+.login_container{
+  margin-left:45%;
+  margin-top:10%;
 }
