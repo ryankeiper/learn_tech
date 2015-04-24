@@ -4,7 +4,7 @@ class ResultsController < ApplicationController
 
   def show
     @result = Result.find(params[:id])
-    @comments = @result.comments.all.order(:id)
+    @comments = @result.comments.all.order(:id).reverse
     if current_user
       @api_info = @result.get_api_info( @result.api_category, current_user.zip_code )
     else
