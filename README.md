@@ -9,6 +9,7 @@ Want to run it on your local server? Follow these steps on the command line...
 5. Run: `$ rake db:migrate`
 6. Run: `$ rake db:seed`
 7. Run rails server: `rails s`
+8. Visit `http://localhost:3000` in your browser to view app
 
 Want to improve our app? Follow these steps...
 
