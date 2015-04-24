@@ -6,8 +6,13 @@
 
 	<%= form_for [@question, @user_response] do |f| %>
 		<% @question.question_answers.each do |answer| %>
-		  <p><%= f.radio_button :response, answer.value %>
-		  <%= f.label "answer_for_question_#{@question.id}", answer.wording %></p>
+		  <% if answer.wording[0] == "A" %>
+			  <p><%= f.radio_button :response, answer.value, checked: true %>
+			  <%= f.label "answer_for_question_#{@question.id}", answer.wording %></p>
+		  <% else %>
+		  	  <p><%= f.radio_button :response, answer.value %>
+			  <%= f.label "answer_for_question_#{@question.id}", answer.wording %></p>
+		  <% end %>
 		<% end %>
 		<%= f.submit "NEXT" %>
 	<% end %>
